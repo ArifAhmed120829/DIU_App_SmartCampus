@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SmartCampus</string>
+    <string name="bold" tools:ignore="ReferenceType">@font/latobold</string>
+    <string name="regular" tools:ignore="ReferenceType">@font/latoregular</string>
+    <string name="light" tools:ignore="ReferenceType">@font/latolight</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_home">Home</string>
+    <string name="save_button">Save_post</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="about_university">
+        Being established in 2002, it has become a
+        prominent private university in Bangladesh. Our 150
+        Acre campus is full of life and positive energy,
+        fostering education and innovation for more than 20000 students.
+    </string>
+    <string name="fragment_about">
+Daffodil International University was established on 24 January 2002.
+It follows a liberal arts approach to education which nurtures fresh
+        ideas and gives new impetus to the field of tertiary education.
+It ensures a high quality of education and aims to meet the demands of contemporary times.Building on
+        Dius experience of seeking solutions to challenges posed by extreme poverty.
+Diu hopes to instill in its students a commitment to working towards national development and progress. Diu is accredited by the University Grants Commission (UGC) and approved by the Ministry of education, Government of Bangladesh.\n
+\n
+
+Mission :
+
+The mission of Daffodil International University is to foster the national development process through the creation of a center of excellence in higher education that is responsive to society\'s needs, and able to develop and create leaders.
+It actively contributes to learning and the creation of knowledge.\n
+\n
+        Goal:
+
+The goal of the university is to provide an excellent broad-based education with a focus on professional development for students, in order to equip them with the knowledge and skills necessary for leading the country in its quest for development.
+Along with this, the university provides an environment for faculty development to ensure a dynamic teaching environment. faculty will be provided with an environment in which they can further their teaching-learning abilities and contribute to the creation of new knowledge by developing and using their research skills.
+    </string>
+
+    <string-array name="theme">
+        <item>System Default</item>
+        <item>Dark</item>
+        <item>Light</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

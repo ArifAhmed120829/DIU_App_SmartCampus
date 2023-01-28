@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".SplashScreenActivity">
+    <Button
+        android:id="@+id/Getstartbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/round_corner"
+        android:text="Get Started"
+        android:textColor="#FDFDFD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_txtview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Welcome to Smart Campus App"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_txtview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="A mobile app for diu students"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/welcome_txtview"
+        app:layout_constraintStart_toStartOf="@+id/welcome_txtview"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_txtview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

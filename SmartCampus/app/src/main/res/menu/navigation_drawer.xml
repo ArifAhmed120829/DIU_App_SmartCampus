@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_ebook"
+        android:title="Ebook"
+        android:icon="@drawable/ic_ebook"/>
+    <item android:id="@+id/navigation_hall"
+        android:title="Transport"
+        android:icon="@drawable/ic_baseline_directions_bus_24"/>
+    <item android:id="@+id/navigation_video_lectures"
+        android:title="Video lectures"
+        android:icon="@drawable/ic_baseline_ondemand_video_24"/>
+    <item android:id="@+id/navigation_issue"
+        android:title="Management Issue"
+        android:icon="@drawable/ic_baseline_managemnet_issue_24"/>
+    <item android:id="@+id/navigation_portal"
+        android:title="Student Portal"
+        android:icon="@drawable/ic_portal"/>
+    <item android:id="@+id/navigation_result"
+        android:title="Academic Result"
+        android:icon="@drawable/ic_academic_res"/>
+
+    <item android:id="@+id/navigation_website"
+        android:title="Website"
+        android:icon="@drawable/ic_web"/>
+
+    <item android:id="@+id/navigation_rate"
+        android:title="Rate Us"
+        android:icon="@drawable/ic_rate"/>
+    <item android:id="@+id/navigation_developer"
+        android:title="Developers"
+        android:icon="@drawable/ic_developer"/>
+
+    <item android:id="@+id/navigation_color"
+        android:title="Color"
+        android:icon="@drawable/ic_color"/>
+
+</menu>

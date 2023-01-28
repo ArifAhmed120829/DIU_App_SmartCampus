@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'//made by firebase
+}
+
+android {
+    compileSdk 32
+
+    buildFeatures{
+        dataBinding true
+    }
+
+    defaultConfig {
+        applicationId "com.example.smartcampus"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.example.smartcampus'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    implementation 'com.google.firebase:firebase-firestore:24.1.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+
+
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:30.3.2')//firebase
+    // TODO: Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+
+    implementation 'com.google.firebase:firebase-analytics'//firebase
+    implementation 'com.google.firebase:firebase-database'//firebase
+    implementation 'com.google.firebase:firebase-auth'//firebase
+    implementation 'com.google.firebase:firebase-storage'//firebase
+    //image and glider exception
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.picasso:picasso:2.8'
+    //Navigation drawer implementation
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    def room_version = "2.4.1"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    // Glide library
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+
+
+
+
+
+}

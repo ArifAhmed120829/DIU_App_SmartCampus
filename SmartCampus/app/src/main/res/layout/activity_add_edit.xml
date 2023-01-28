@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+        <variable
+            name="clickHandler"
+            type="com.example.smartcampus.AddEditActivity.AddAndEditActivityClickHandlers" />
+
+        <variable
+            name="course"
+            type="com.example.smartcampus.model.Course" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        tools:context=".AddEditActivity">
+
+
+        <EditText
+            android:text="@={course.courseName}"
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:hint="Course Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:text="@={course.unitPrice}"
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:hint="Course Price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <Button
+            android:id="@+id/submitBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:text="Submit Course"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText2"
+            android:onClick="@{clickHandler::onSubmitButtonClicked}"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
